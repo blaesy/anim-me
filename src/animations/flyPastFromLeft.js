@@ -10,7 +10,7 @@ const animation = keyframes`
     opacity: 1;
     padding-right: -25px;
     padding-left: -25px;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 100% {
@@ -19,7 +19,7 @@ const animation = keyframes`
 }
 `;
 
-export const FlyPastLeft = styled.div`
+export const FlyPastFromLeft = styled.div`
 position: absolute;
 width: inherit;
 height: inherit;

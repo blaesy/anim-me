@@ -10,7 +10,9 @@ import { PopIn } from "./animations/popIn";
 import { PopOut } from "./animations/popOut";
 import { PopOutFade } from "./animations/popOutFade";
 import { PopInFade } from "./animations/popInFade";
-import { FlyPastLeft } from "./animations/flyPastLeft";
+import { FlyPastFromLeft } from "./animations/flyPastFromLeft";
+import { FlyPastFromRight } from "./animations/flyPastFromRight";
+import { RotateFadeIn } from "./animations/rotateFadeIn";
 
 export const TextAnims = [
     {
@@ -74,8 +76,18 @@ export const TextAnims = [
         duration: 500
     },
     {
-        title: "flyPastLeft",
-        component: FlyPastLeft,
-        duration: 2000
+        title: "flyPastFromLeft",
+        component: FlyPastFromLeft,
+        duration: 1000
     },
+    {
+        title: "flyPastFromRight",
+        component: FlyPastFromRight,
+        duration: 1000
+    },
+    {
+        title: "rotateFadeIn",
+        component: RotateFadeIn,
+        duration: 2000
+    }
 ]

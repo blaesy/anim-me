@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const AnimWrap = styled.div`
 position: relative;
 font-size: 24px;
-height: 250px;
-width: 300px;
+height: 200px;
+width: 250px;
 display: flex;
 margin: 16px;
 box-sizing: border-box;
