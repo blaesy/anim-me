@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { AnimationCard } from './AnimationCard';
-import { FadeIn, FadeOut, FlyFromLeft } from './animations/flyFromLeft';
-import { TextAnims } from './textAnims';
+import { TextAnims } from './text-animations-config';
 
 const AnimationsWrapper = styled.div`
 margin: 100px 15%;
