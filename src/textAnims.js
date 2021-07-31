@@ -13,6 +13,7 @@ import { PopInFade } from "./animations/popInFade";
 import { FlyPastFromLeft } from "./animations/flyPastFromLeft";
 import { FlyPastFromRight } from "./animations/flyPastFromRight";
 import { RotateFadeIn } from "./animations/rotateFadeIn";
+import { RotateFadeOut } from "./animations/rotateFadeOut";
 
 export const TextAnims = [
     {
@@ -88,6 +89,11 @@ export const TextAnims = [
     {
         title: "rotateFadeIn",
         component: RotateFadeIn,
+        duration: 2000
+    },
+    {
+        title: "rotateFadeOut",
+        component: RotateFadeOut,
         duration: 2000
     }
 ]

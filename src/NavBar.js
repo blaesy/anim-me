@@ -64,7 +64,7 @@ font-size: 48px;
 const NavBar = () => {
 
     let history = useHistory();
-    const [activePageId, setActivePageId] = React.useState(0);
+    const [activePageId, setActivePageId] = React.useState(1);
     
     return (
         <>

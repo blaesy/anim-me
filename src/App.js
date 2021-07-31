@@ -3,6 +3,7 @@ import Content from "./Content"
 import React from 'react';
 import {
   BrowserRouter as Router,
+  Redirect,
   Route
 } from 'react-router-dom';
 import NavBar from "./NavBar";
@@ -40,6 +41,8 @@ const App = () => {
         <ContentWrapper>
           <NavBar />
           <Route exact path="/animations/text" component={Content} />
+
+          <Redirect to="/animations/text" />
         </ContentWrapper>
       </Router>
     </Wrapper>

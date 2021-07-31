@@ -2,8 +2,8 @@ import styled, { keyframes, css } from 'styled-components';
 
 const animation = keyframes`
 0% {
-    opacity: 0;
-    transform: scale(2);
+    opacity: 1;
+    transform: scale(1);
 }
 
 80% {
@@ -12,8 +12,8 @@ const animation = keyframes`
 
 }
 100% {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(2);
 }
 `;
 
