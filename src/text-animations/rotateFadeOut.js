@@ -1,20 +1,29 @@
 import styled, { keyframes, css } from 'styled-components';
 
 const animation = keyframes`
-from {
-    opacity: 0;
-    padding-top: 200px;
+0% {
+    opacity: 1;
+    transform: rotateY(360deg);
+    font-size: inherit;
 }
 
-to {
+20% {
     opacity: 1;
-    padding-top: 0;
+}
+
+100% {
+    opacity: 0;
+    transform: rotateY(0deg);
+    font-size: 0;
 }
 `;
 
-export const FlyFromDown = styled.div`
+const RotateFadeOut = styled.div`
 position: absolute;
 width: inherit;
 height: inherit;
+transform-style: preserve-3d;
 animation: ${props => props.hovered ? css`${animation} ${props.duration ? props.duration+'ms' : '1000ms'} ease-in-out 1 forwards` : ''};
 `;
+
+export default RotateFadeOut;

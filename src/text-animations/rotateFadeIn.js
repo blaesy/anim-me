@@ -3,25 +3,27 @@ import styled, { keyframes, css } from 'styled-components';
 const animation = keyframes`
 0% {
     opacity: 0;
-    padding-right: 200px;
+    transform: rotateY(0deg);
+    font-size: 0;
 }
 
-50% {
+80% {
     opacity: 1;
-    padding-right: -25px;
-    padding-left: -25px;
-    transform: scale(1.2);
 }
 
 100% {
-    opacity: 0;
-    padding-left: 200px;
+    opacity: 1;
+    transform: rotateY(360deg);
+    font-size: inherit;
 }
 `;
 
-export const FlyPastFromLeft = styled.div`
+const RotateFadeIn = styled.div`
 position: absolute;
 width: inherit;
 height: inherit;
+transform-style: preserve-3d;
 animation: ${props => props.hovered ? css`${animation} ${props.duration ? props.duration+'ms' : '1000ms'} ease-in-out 1 forwards` : ''};
 `;
+
+export default RotateFadeIn;

@@ -17,9 +17,11 @@ const animation = keyframes`
 }
 `;
 
-export const PopInFade = styled.div`
+const PopInFade = styled.div`
 position: absolute;
 width: inherit;
 height: inherit;
 animation: ${props => props.hovered ? css`${animation} ${props.duration ? props.duration+'ms' : '1000ms'} ease-in-out 1 forwards` : ''};
 `;
+
+export default PopInFade;
